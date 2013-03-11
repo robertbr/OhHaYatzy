@@ -1,6 +1,4 @@
 OhHaYatzy
 =========
 
-Testing!
-
-Testing some more!
+Hei!

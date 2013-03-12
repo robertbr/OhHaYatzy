@@ -1,1 +1,21 @@
-Yatzy
+Aihe: Yatzy-peli
+
+Yatzy on hyvin tunnettu noppapeli. Ensin pelaajat kirjoittavat nimensä pöytäkirjaan. Pelaajat yrittävät sen jälkeen vuorotellen noppia heittämällä saada tiettyjä lukuyhdistelmiä. Vuorollaan pelaaja saa heittää noppia kolme kertaa. Vuoroja on kaikkiaan viisitoista. Toteutuksessani on tarkoitus että pöytäkirja näyttää mitkä pöytäkirjan kohdat ovat sallituja ja kukin vaihtoehdon pistemäärän. Pöytäkirja käyttää siis "pistelaskuriluokkaa". Pelaaja voi klikkaamalla valita hänen mielestä paras vaihtoehto. Kun kaikki pöytäkirjan kohdat on täytetty lasketaan loppupisteet.  http://fi.wikipedia.org/wiki/Yatzy
+
+
+Käyttäjät: Pelaaja(t)
+
+Toiminnot:
+
+- Kirjoittaminen pöytäkirjaan
+	- nimet
+	- pisteet
+
+- Noppien heittäminen
+	- ensimmäisellä heittokerralla pelajaa heittää 5 noppaa
+	- toisella heittokerralla pelaaja heittää 0 - 5 noppaa
+	- kolmannella heittokerralla pelaaja heittää 0 - 5 noppaa
+
+- Noppien valitseminen
+	- toisella ja kolmanella heittokerralla pelaaja valitsee mitkä nopat hän haluaa jättää heittämättä
+	

@@ -1,1 +1,17 @@
-Yatzy!
+Aihe: Yatzy
+
+
+Käyttäjät: Pelaaja(t)
+
+Toiminnot:
+
+- Kirjoittaminen pöytäkirjaan
+	- nimet
+	- pisteet
+- Noppien heittäminen
+	- ensimmäisellä heitolla 5 noppaa
+	- toisella heitolla 0 - 5 noppaa
+	- kolmannella heitolla 0 - 5 noppaa
+
+
+

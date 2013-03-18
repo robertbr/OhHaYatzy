@@ -39,8 +39,7 @@ public class DieTest {
     public void tearDown() {
     }
     
-    @Test
-    
+    @Test   
     public void testDieValueBetweenOneAndSix(){
         Boolean dieValueBetweenOneAndSix = true;
         //We throw the die 1000 times to check, then we know that it is probably true

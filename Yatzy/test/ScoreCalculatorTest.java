@@ -135,6 +135,12 @@ public class ScoreCalculatorTest {
     }
     
     @Test
+    public void testTwoPairsInFourOfAKind(){
+        calc = new ScoreCalculator(5,5,4,5,5);
+        assertEquals(0,calc.TwoPairs());     
+    }
+    
+    @Test
     public void testStraightSmallStraight(){
         calc = new ScoreCalculator(1,3,5,2,4);
         assertEquals(15,calc.Straight(0));     

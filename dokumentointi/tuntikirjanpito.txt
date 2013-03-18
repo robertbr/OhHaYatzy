@@ -6,3 +6,8 @@ Luin githubista ja kokeilin githubin toimintaa.
 12.3.2012
 Käyttämäni aika: 1/2 h
 Kirjoitin ohjelmastani.
+
+
+18.3.2012
+Käyttämäni aika: 2 h
+Tein luokat Die ja ScoreCounting ja niiden testluokat.

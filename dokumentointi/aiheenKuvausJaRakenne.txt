@@ -24,4 +24,6 @@ Toiminnot:
 
 - Noppien valitseminen
 	- toisella ja kolmanella heittokerralla pelaaja valitsee mitk‰ nopat h‰n haluaa j‰tt‰‰ heitt‰m‰tt‰
+
+- Pelin tallentaminen ja lataaminen
 	

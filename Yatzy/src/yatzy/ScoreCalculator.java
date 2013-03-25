@@ -27,7 +27,7 @@ public class ScoreCalculator {
     
     //UpperSection = Ones, Twos, Threes, Fours, Fives and Sixes
     //Threes: The sum of all dice showing the number 3.
-    public int UpperSection(int i){
+    public int upperSection(int i){
         int score = 0;
         for(int die : diceValues){
             if(die == i){
@@ -39,10 +39,10 @@ public class ScoreCalculator {
     
     // Pair = two of a kind
     // Yatzy = five of a kind
-    public int NOfAKind(int nOfAKind){
+    public int nOfAKind(int nOfAKind){
         int score = 0;
         for(int i = 1; i<=6;i++){
-            if(UpperSection(i) >= nOfAKind*i){
+            if(upperSection(i) >= nOfAKind*i){
                 score = nOfAKind*i;
             }
         }
@@ -55,18 +55,18 @@ public class ScoreCalculator {
     //Two pairs = Two of a kind and two of a different kind 
     //e.g: 4,4,2,2,6 or 4,4,2,2,2 but not for example 6,6,6,6,4
     public int TwoPairs(){
-        int NOfAKind2 = NOfAKind(2)/2; //Biggest Pair
+        int nOfAKind2 = nOfAKind(2)/2; //Biggest Pair
         
-        int NOfAKindDifferent = 0; //Smallest Pair
+        int nOfAKindDifferent = 0; //Smallest Pair
         for(int i = 1; i<=6;i++){
-            if(UpperSection(i) >= 2*i){
-                NOfAKindDifferent = i;
+            if(upperSection(i) >= 2*i){
+                nOfAKindDifferent = i;
                 break;
             }
         }
         
-        if((NOfAKindDifferent != NOfAKind2) && NOfAKindDifferent !=0 && NOfAKind2 != 0){
-            return 2*NOfAKindDifferent+2*NOfAKind2;
+        if((nOfAKindDifferent != nOfAKind2) && nOfAKindDifferent !=0 && nOfAKind2 != 0){
+            return 2*nOfAKindDifferent+2*nOfAKind2;
         }
         return 0;
         
@@ -75,10 +75,10 @@ public class ScoreCalculator {
     //Full House = Tree of a kind and two of a different kind
     //e.g: 4,4,4,2,2, but not for example 4,4,4,4,4
     public int FullHouse(){
-        int NOfAKind3 = NOfAKind(3)/3;
-        int NOfAKind2 = NOfAKind(2)/2;
-        if((NOfAKind3 != NOfAKind2) && NOfAKind3 !=0 && NOfAKind2 != 0){
-            return 3*NOfAKind3+2*NOfAKind2;
+        int nOfAKind3 = nOfAKind(3)/3;
+        int nOfAKind2 = nOfAKind(2)/2;
+        if((nOfAKind3 != nOfAKind2) && nOfAKind3 !=0 && nOfAKind2 != 0){
+            return 3*nOfAKind3+2*nOfAKind2;
         }
         return 0;
         
@@ -91,7 +91,7 @@ public class ScoreCalculator {
     
     //if small == 0 we are searching for a small straight if 
     //if small == 1 we are searching for a large straight if
-    public int Straight(int small){
+    public int straight(int small){
         
         int foundNumbers = 0;
         

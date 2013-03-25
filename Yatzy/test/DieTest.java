@@ -44,7 +44,7 @@ public class DieTest {
         Boolean dieValueBetweenOneAndSix = true;
         //We throw the die 1000 times to check, then we know that it is probably true
         int i = 0;
-        while(i<1000){
+        while(i<100000){
             die = new Die();
             if(die.getValue()<1 || die.getValue()>6){
                 dieValueBetweenOneAndSix = false;

@@ -47,55 +47,55 @@ public class ScoreCalculatorTest {
     @Test
     public void testUpperSectionOnes(){
         calc = new ScoreCalculator(1,2,3,1,1);
-        assertEquals(3,calc.UpperSection(1));       
+        assertEquals(3,calc.upperSection(1));       
     }
     
     @Test
     public void testUpperSectionSixes(){
         calc = new ScoreCalculator(6,6,4,6,6);
-        assertEquals(24,calc.UpperSection(6));    
+        assertEquals(24,calc.upperSection(6));    
     }
     
     @Test
     public void testUpperSectionZero(){
         calc = new ScoreCalculator(6,6,4,6,6);
-        assertEquals(0,calc.UpperSection(5));     
+        assertEquals(0,calc.upperSection(5));     
     }
     
     @Test
     public void testNOfAKindYatzy(){
         calc = new ScoreCalculator(4,4,4,4,4);
-        assertEquals(50,calc.NOfAKind(5));      
+        assertEquals(50,calc.nOfAKind(5));      
     }
     
     @Test
     public void testNOfAKindNoYatzy(){
         calc = new ScoreCalculator(4,4,4,4,5);
-        assertEquals(0,calc.NOfAKind(5));      
+        assertEquals(0,calc.nOfAKind(5));      
     }
     
     @Test
     public void testNOfAKindPairOfFours(){
         calc = new ScoreCalculator(4,4,4,4,4);
-        assertEquals(8,calc.NOfAKind(2));     
+        assertEquals(8,calc.nOfAKind(2));     
     }
     
     @Test
     public void testNOfAKindPairOfSixes(){
         calc = new ScoreCalculator(6,4,6,4,6);
-        assertEquals(12,calc.NOfAKind(2));      
+        assertEquals(12,calc.nOfAKind(2));      
     }
     
     @Test
     public void testNOfAKindThreeOfAKind(){
         calc = new ScoreCalculator(2,2,1,2,3);
-        assertEquals(6,calc.NOfAKind(3));      
+        assertEquals(6,calc.nOfAKind(3));      
     }
     
     @Test
     public void testNOfAKindThreeOfAKindInYatzy(){
         calc = new ScoreCalculator(2,2,2,2,2);
-        assertEquals(6,calc.NOfAKind(3));       
+        assertEquals(6,calc.nOfAKind(3));       
     }
     
     @Test
@@ -143,31 +143,31 @@ public class ScoreCalculatorTest {
     @Test
     public void testStraightSmallStraight(){
         calc = new ScoreCalculator(1,3,5,2,4);
-        assertEquals(15,calc.Straight(0));     
+        assertEquals(15,calc.straight(0));     
     }
     
     @Test
     public void testStraightNoSmallStraight(){
         calc = new ScoreCalculator(1,2,3,3,4);
-        assertEquals(0,calc.Straight(0));     
+        assertEquals(0,calc.straight(0));     
     }
     
     @Test
     public void testStraightNoSmallStraightButBigStraight(){
         calc = new ScoreCalculator(2,3,4,6,5);
-        assertEquals(0,calc.Straight(0));     
+        assertEquals(0,calc.straight(0));     
     }
     
     @Test
     public void testStraightBigStraight(){
         calc = new ScoreCalculator(2,6,4,3,5);
-        assertEquals(21,calc.Straight(1));     
+        assertEquals(21,calc.straight(1));     
     }
     
     @Test
     public void testStraightNoBigStraight(){
         calc = new ScoreCalculator(2,6,4,4,5);
-        assertEquals(0,calc.Straight(1));     
+        assertEquals(0,calc.straight(1));     
     }
     
     // TODO add test methods here.
